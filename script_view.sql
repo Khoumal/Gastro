@@ -1,0 +1,2 @@
+create view  PrixProduit as 
+select prix.idprix,prix.idproduit,produit.idcategorie,prix.montant,prix.dateprix,produit.nomproduit,produit.imageproduit from prix join produit on produit.idproduit=prix.idproduit order by prix.dateprix  Desc 
